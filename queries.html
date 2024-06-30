@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Queries</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+
+            margin: 0;
+
+        }
+
+        #heading {
+            text-align: center;
+            position: absolute;
+            top: 150px;
+            left: 450px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 250px;
+            left: 180px;
+            width: 1000px;
+            margin-bottom: 400px;
+        }
+
+        .hr-line {
+            width: 60%;
+            margin: auto;
+
+        }
+
+        .page {
+            color: #444;
+            cursor: pointer;
+            padding: 30px 20px;
+            width: 60%;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            margin: auto;
+        }
+
+        .body {
+            margin: auto;
+            width: 50%;
+            padding: auto;
+
+        }
+
+        .active,
+        .page:hover {
+            background-color: #F9F9F9;
+        }
+
+        .body {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+        }
+
+        .page:after {
+            content: '\02795';
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796";
+        }
+
+        .navbar {
+            position: fixed;
+            top: 25px
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            background-color: black;
+        }
+
+        .navbar ul li {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #3498db;
+            width: 204.5px;
+            display: block;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+
+        }
+
+        .navbar ul li a:hover {
+            background-color: rgb(96, 166, 184);
+            color: white;
+        }
+
+        .btn {
+
+            position: absolute;
+            top: 650px;
+            border: 1px solid rgb(19, 19, 17);
+            background-color: rgb(17, 16, 19);
+            border-radius: 50px;
+            height: 40px;
+            width: 150px;
+            text-align: center;
+            padding: 14px;
+            left: 29px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(212, 97, 51);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="destiny.html">Destinations </a></li>
+            <li><a href="SL.html">SL</a></li>
+            <li><a href="to-do.html">To-Do list</a></li>
+            <li><a href="queries.html">queries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <h1 id="heading">Frequently Asked Questions</h1>
+
+    <main>
+        <section class="container">
+            <div class="one">
+                <h1 class="page">What is size of island?</h1>
+                <div class="body">
+                    <p>At 65,525 square kilometres (25,299 Sq. miles). Its length from northernmost point at Point Pedro
+                        to Southernmost point at Dondra Head is 435km (271 miles) while the greatest width is 240km (149
+                        miles)</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="two">
+                <h1 class="page">The best time to visit Sri Lanka ?</h1>
+                <div class="body">
+                    <p>Sri Lanka is a tropical country with almost the same season all year long except for monsoon
+                        seasons kicking off at different times during the year, despite showers a warm sunny climate is
+                        always guaranteed.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="three">
+                <h1 class="page"> What currency is used in Sri Lanka ?</h1>
+                <div class="body">
+                    <p>Sri Lankan Rupee (LKR) Approximate exchange rate USD 1 = LKR 140</p><br><br><br>
+                </div>
+            </div><br><br><br><br><br>
+        </section>
+    </main>
+    <div class="btn">
+        <a href="home.html">previous</a>
+    </div><br>
+    <script>
+        var faq = document.getElementsByClassName("page");
+        var i;
+        for (i = 0; i < faq.length; i++) {
+            faq[i].addEventListener("click", function () {
+
+                this.classList.toggle("active");
+
+                var body = this.nextElementSibling;
+                if (body.style.display === "block") {
+                    body.style.display = "none";
+                }
+                else {
+                    body.style.display = "block";
+                }
+            }
+            );
+        }
+    </script>
+
+</body>
+
+</html>

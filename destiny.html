@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" type="text/css" href="Travel.css">
+    <style>
+        #hut {
+            opacity: 0.7;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            position: absolute;
+            top: 150px;
+            left: 500px;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            position: relative;
+
+        }
+
+        nav ul li {
+            text-align: center;
+            display: block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            align-items: center;
+            padding: 10px 30px;
+            color: rgb(17, 17, 15);
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        nav ul ul {
+            position: absolute;
+            left: 250px;
+            top: 5px;
+            background-color: rgb(27, 121, 150);
+            display: none;
+            width: 200px;
+            padding: 10px 20px;
+        }
+
+        nav ul .dropdown {
+            position: relative;
+            border-bottom: black;
+
+        }
+
+        nav ul .dropdown:hover ul {
+            display: initial;
+
+        }
+
+        .dropdown ul li a:hover {
+            background-color: rgb(8, 8, 8);
+            color: white;
+        }
+
+        nav ul .dropdown2 {
+            position: relative;
+
+        }
+
+        nav ul .dropdown2:hover ul {
+            display: initial;
+        }
+
+        .dropdown2 ul li a:hover {
+            background-color: rgb(8, 8, 8);
+            color: white;
+        }
+
+        nav ul .dropdown3 {
+            position: relative;
+
+        }
+
+        nav ul .dropdown3:hover ul {
+            display: initial;
+        }
+
+        .dropdown3 ul li a:hover {
+            background-color: rgb(8, 8, 8);
+            color: white;
+        }
+
+        .btn5 {
+
+            position: absolute;
+            top: 650px;
+            border: 1px solid rgb(19, 19, 17);
+            background-color: rgb(17, 16, 19);
+            border-radius: 50px;
+            height: 40px;
+            width: 150px;
+            text-align: center;
+            padding: 14px;
+            left: 29px;
+        }
+
+        .btn5 a {
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(212, 97, 51);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="hut.jpg" id="hut">
+    <div class="nav">
+        <ul class="drop">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="destiny.html">Destinations </a></li>
+            <li><a href="SL.html">SL</a></li>
+            <li><a href="to-do.html">To-Do list</a></li>
+            <li><a href="queries.html">queries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li class="dropdown"><a href="#">Sabaragamuwa Province</a>
+                <ul>
+                    <li><a href="adam's_peak.html">Adam's peak</a></li>
+                    <li><a href="sinharaja.html">Sinharaja Rain Forest</a></li>
+                    <li><a href="#">Ella</a></li>
+                    <li><a href="#">Pinawalla</a></li>
+                </ul>
+            </li><br>
+
+            <li class="dropdown2"><a href="#">central Province</a>
+                <ul>
+                    <li><a href="sigiriya.html">Sigiriya</a></li>
+                    <li><a href="#">pidurutalagala</a></li>
+                    <li><a href="#">Dabulla cave Temple</a></li>
+                </ul>
+            </li><br>
+            <li class="dropdown3"><a href="#">Southern Province</a>
+                <ul>
+                    <li><a href="#">Hikaduwa Beach</a></li>
+                    <li><a href="#">Benota Beach</a></li>
+                </ul>
+            </li><br>
+            <li><a href="#">Uva Province</a></li><br>
+            <li><a href="#">Western Province</a></li><br>
+            <li><a href="#">North Western Province</a></li><br>
+            <li><a href="#">North Central Province</a></li><br>
+            <li><a href="#">Northern Province</a></li><br>
+            <li><a href="#">Eastern Province</a></li><br>
+        </ul>
+    </nav>
+    <div class="btn5">
+        <a href="home.html">previous</a>
+    </div><br>
+</body>
+
+</html>
